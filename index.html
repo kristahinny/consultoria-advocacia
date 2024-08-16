@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Jurídica</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="consulta">
+        <h1>Consulta Jurídica</h1>
+        <p>Preencha o formulário abaixo para solicitar uma consulta jurídica.</p>
+
+        <!-- Formulário de Consulta -->
+        <form id="consultoriaForm">
+            <!-- Campo para Nome -->
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Seu nome" required>
+            </div>
+
+            <!-- Campo para E-mail -->
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Seu e-mail" required>
+            </div>
+
+            <!-- Campo para Telefone -->
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" placeholder="Seu telefone" required>
+            </div>
+
+            <!-- Campo para Assunto -->
+            <div class="form-group">
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" placeholder="Assunto da consulta" required>
+            </div>
+
+            <!-- Campo para Descrição -->
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" rows="4" placeholder="Descreva sua situação" required></textarea>
+            </div>
+
+            <!-- Botão de Enviar -->
+            <button type="submit">Enviar Consulta</button>
+        </form>
+    </div>
+
+    <!-- Inclua o SDK do EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
