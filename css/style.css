@@ -6,7 +6,7 @@ body {
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
     display: flex;
-    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     height: 100vh;
     margin: 0;
@@ -20,26 +20,24 @@ body {
     width: 100%;
     max-width: 500px; /* Largura máxima do formulário */
     box-sizing: border-box; /* Inclui padding e border no tamanho total */
-    margin-left: 20px; /* Margem à esquerda para afastar do borde */
 }
 
 .consulta h1 {
     color: #2e8b57; /* Verde escuro */
     font-size: 2rem;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .consulta p {
     color: #333;
     font-size: 1rem;
     margin-bottom: 15px;
-    text-align: left;
+    text-align: center;
 }
 
 .form-group {
     margin-bottom: 20px;
-    text-align: left;
 }
 
 .form-group label {
@@ -81,4 +79,32 @@ body {
 
 .consulta button:hover {
     background-color: #1e6f3b; /* Verde mais escuro */
+}
+/* Estilos para o botão do WhatsApp */
+.whatsapp {
+    margin-top: 20px;
+    text-align: center; /* Centraliza o botão */
+}
+
+.whatsapp a {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25D366; /* Verde do WhatsApp */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.whatsapp a:hover {
+    background-color: #128C7E; /* Verde mais escuro do WhatsApp */
+}
+
+.whatsapp-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
 }
